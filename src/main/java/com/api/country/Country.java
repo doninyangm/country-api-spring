@@ -1,11 +1,12 @@
 package com.api.country;
 
 public class Country {
-	private int id;
-	private String name, ISO2, ISO3, continent, capital, currency, population;
+	private Integer id;
+	private int population;
+	private String name, ISO2, ISO3, continent, capital, currency;
 	
 	public Country(String name, String iSO2, String iSO3, String continent, String capital, String currency,
-			String population) {
+			int population) {
 		super();
 		this.name = name;
 		ISO2 = iSO2;
@@ -16,11 +17,11 @@ public class Country {
 		this.population = population;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -72,11 +73,11 @@ public class Country {
 		this.currency = currency;
 	}
 
-	public String getPopulation() {
+	public int getPopulation() {
 		return population;
 	}
 
-	public void setPopulation(String population) {
+	public void setPopulation(int population) {
 		this.population = population;
 	}
 	
