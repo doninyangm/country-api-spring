@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class CountryDAO {
 	
 	private static List<Country> countries = new ArrayList<>();
